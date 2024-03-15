@@ -1,0 +1,20 @@
+﻿@model OrnekModel
+
+
+<form action="/Ornek/FormdanNesneAl" method="post">
+
+    <input asp-for="@Model.No" type="number" />
+    <input asp-for="@Model.Ad" type="text" />
+    <button type="submit"> Formu Gonder </button>
+</form>
+
+
+<p> I form Örneği Aşağıda</p>
+
+
+<form action="/Ornek/IformOrnegi" method="post">
+    <input name="No" type="number" />
+    <input name="Ad" type="text" />
+    <button type="submit"> Gonder </button>
+
+</form>

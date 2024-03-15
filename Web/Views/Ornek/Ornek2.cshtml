@@ -1,5 +1,19 @@
 ﻿<h1> Örnek View - 2 </h1>
 
-
-
 @ViewBag.Mesaj
+
+
+@{
+    var Veri1 = @ViewData["OrnekModel"] as OrnekModel;
+
+    if (Veri1 != null)
+    {
+        <p> @Veri1.Ad </p>
+    }
+
+    var Veri2 = TempData["OrnekModel"] as OrnekModel;
+    if (Veri2 != null)
+    {
+        <p> @Veri2.Ad </p>
+    }
+}
