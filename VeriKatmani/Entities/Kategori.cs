@@ -9,5 +9,6 @@ public partial class Kategori
 
     public string? Ad { get; set; }
 
+
     public virtual ICollection<Urun> Urun { get; set; } = new List<Urun>();
 }
