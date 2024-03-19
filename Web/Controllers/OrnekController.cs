@@ -206,28 +206,23 @@ namespace Web.Controllers
         }
 
         // JS- Ajax Ornekleri
-
-
         public IActionResult AjaxViewAc(IFormCollection Veri)
         {
 
             return View("Ajax");
         }
 
-
         public IActionResult AjaxDeneme()
         {
             return Json("");
         }
 
-
         public IActionResult AjaxNesne(OrnekModel Veri)
         {
-
             return Json("Burdanda veri dondur");
         }
 
-
+        
 
 
         #endregion

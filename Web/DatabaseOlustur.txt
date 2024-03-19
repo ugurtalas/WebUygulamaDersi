@@ -1,0 +1,65 @@
+﻿CREATE DATABASE EticaretWUD;
+Use EticaretWUD
+CREATE TABLE Rol (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Ad varchar(255) ,
+);
+
+CREATE TABLE Kullanici (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Ad varchar(255) ,
+    Soyad varchar(255),
+    KullaniciAd varchar(255),
+    Sifre varchar(255),
+    Eposta varchar(255),
+	Adres varchar(255),
+	RolNo int FOREIGN KEY REFERENCES Rol(No)
+);
+
+CREATE TABLE Kategori (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Ad varchar(255) ,
+);
+
+CREATE TABLE Urun (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Baslik varchar(255) ,
+	Aciklama varchar(255),
+    ResimYol varchar(255),
+    Fiyat int,
+    Stok int,
+	KategoriNo int FOREIGN KEY REFERENCES Kategori(No),
+	KullaniciNo int FOREIGN KEY REFERENCES Kullanici(No)
+);
+
+CREATE TABLE UrunYorum (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Baslik varchar(255) ,
+	Yorum varchar(255),
+	UrunNo int FOREIGN KEY REFERENCES Urun(No),
+	KullaniciNo int FOREIGN KEY REFERENCES Kullanici(No),
+	EklemeTarih datetime
+);
+
+CREATE TABLE SiparisDurum (
+    No int IDENTITY(1,1) PRIMARY KEY,
+    Ad varchar(255) ,
+);
+
+
+CREATE TABLE Siparis (
+    No int IDENTITY(1,1) PRIMARY KEY,
+	UrunNo int FOREIGN KEY REFERENCES Urun(No),
+	KullaniciNo int FOREIGN KEY REFERENCES Kullanici(No),
+	SiparisDurumNo int FOREIGN KEY REFERENCES SiparisDurum(No),
+	Fiyat int,
+	EklemeTarih datetime
+);
+
+
+CREATE TABLE Sepet (
+    No int IDENTITY(1,1) PRIMARY KEY,
+	UrunNo int FOREIGN KEY REFERENCES Urun(No),
+	KullaniciNo int FOREIGN KEY REFERENCES Kullanici(No),
+	EklemeTarih datetime
+);
