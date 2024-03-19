@@ -221,8 +221,22 @@ namespace Web.Controllers
         {
             return Json("Burdanda veri dondur");
         }
+        public IActionResult AjaxNesneDondurme(OrnekModel Veri)
+        {
+            OrnekModel Nesne = new OrnekModel();
+            Nesne.No = 99;
+            Nesne.Ad = "dsfdsfsdf";
+            return Json(Nesne);
+        }
 
-        
+
+        public IActionResult AjaxViewDondurme(OrnekModel Veri)
+        {
+
+            ViewBag.Mesaj = Veri.No.ToString() + "  " + Veri.Ad;
+            return PartialView("Ornek2");
+        }
+
 
 
         #endregion

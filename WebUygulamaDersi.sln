@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{674974E2-C0A9-45B9-8083-102929DE597B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{674974E2-C0A9-45B9-8083-102929DE597B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Islem", "Islem\Islem.csproj", "{AEAC189B-2526-4948-8CD1-E82BFE94FFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeriKatmani", "VeriKatmani\VeriKatmani.csproj", "{36F95010-256A-4A6A-9404-1400C7EBE557}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{674974E2-C0A9-45B9-8083-102929DE597B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674974E2-C0A9-45B9-8083-102929DE597B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674974E2-C0A9-45B9-8083-102929DE597B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAC189B-2526-4948-8CD1-E82BFE94FFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAC189B-2526-4948-8CD1-E82BFE94FFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAC189B-2526-4948-8CD1-E82BFE94FFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAC189B-2526-4948-8CD1-E82BFE94FFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F95010-256A-4A6A-9404-1400C7EBE557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F95010-256A-4A6A-9404-1400C7EBE557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F95010-256A-4A6A-9404-1400C7EBE557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F95010-256A-4A6A-9404-1400C7EBE557}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
