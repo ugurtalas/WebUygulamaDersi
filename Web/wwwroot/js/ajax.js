@@ -17,7 +17,6 @@
 		Veri = {
 			Ad: "Ugur",
 			No:5
-
 		}
 		$.ajax({
 			url: "/ornek/AjaxNesne",
