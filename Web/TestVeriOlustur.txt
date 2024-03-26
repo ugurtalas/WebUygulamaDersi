@@ -1,0 +1,42 @@
+﻿-- Roller
+insert into Rol (Ad) values ('Yönetici')
+insert into Rol (Ad) values ('Satıcı')
+insert into Rol (Ad) values ('Müşteri')
+
+-- Kullanıcı
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Osman','Yıldız','Osm','123','a@a.com','Bilecik',1)
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Hasan','Yıldız','Has','123','a@a.com','Eskişehir',2)
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Hüseyin','Yıldız','Hüs','123','a@a.com','İstanbul',2)
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Mehmet','Yıldız','Meh','123','a@a.com','Ankara',1)
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Ayşe','Yıldız','Ayş','123','a@a.com','İzmir',1)
+insert into Kullanici(Ad,Soyad,KullaniciAd,Sifre,Eposta,Adres,RolNo) values ('Fatma','Yıldız','Fat','123','a@a.com','Bursa',1)
+
+
+-- Kategori
+insert into Kategori(Ad) values ('Telefon')
+insert into Kategori(Ad) values ('Tablet')
+insert into Kategori(Ad) values ('Laptop')
+insert into Kategori(Ad) values ('Monitör')
+
+--Sipariş durum
+insert into SiparisDurum(Ad) values ('Onay Bekliyor')
+insert into SiparisDurum(Ad) values ('Onaylı')
+insert into SiparisDurum(Ad) values ('Kargoda')
+insert into SiparisDurum(Ad) values ('TeslimEdildi')
+
+
+-- Ürün 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('İphone 15', ' İphone 15 yeni TASARIM  iPhone 15 Plus, renkle işlenmiş dayanıklı cam ve alüminyum tasarımla sunuluyor. Suya, sıçramalara ve toza dayanıklı. Tüm akıllı telefon camlarından daha sağlam bir materyal olan Ceramic Shield ön yüzeye sahip. 6.7 inç Super Retina XDR ekran, iPhone 14e kıyasla güneşte iki kata kadar daha aydınlık görünüyor.'
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',80000,5,1) 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('İphone 14', ' İphone 14 yeni TASARIM  iPhone 15 Plus, renkle işlenmiş dayanıklı cam ve alüminyum tasarımla sunuluyor. Suya, sıçramalara ve toza dayanıklı. Tüm akıllı telefon camlarından daha sağlam bir materyal olan Ceramic Shield ön yüzeye sahip. 6.7 inç Super Retina XDR ekran, iPhone 14e kıyasla güneşte iki kata kadar daha aydınlık görünüyor.'
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',60000,5,1) 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('İphone 13', ' İphone 15 yeni TASARIM  iPhone 15 Plus, renkle işlenmiş dayanıklı cam ve alüminyum tasarımla sunuluyor. Suya, sıçramalara ve toza dayanıklı. Tüm akıllı telefon camlarından daha sağlam bir materyal olan Ceramic Shield ön yüzeye sahip. 6.7 inç Super Retina XDR ekran, iPhone 14e kıyasla güneşte iki kata kadar daha aydınlık görünüyor.'
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',40000,5,1) 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('İphone 12', ' İphone 15 yeni TASARIM  iPhone 15 Plus, renkle işlenmiş dayanıklı cam ve alüminyum tasarımla sunuluyor. Suya, sıçramalara ve toza dayanıklı. Tüm akıllı telefon camlarından daha sağlam bir materyal olan Ceramic Shield ön yüzeye sahip. 6.7 inç Super Retina XDR ekran, iPhone 14e kıyasla güneşte iki kata kadar daha aydınlık görünüyor.'
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',20000,5,1) 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('Lenova', ' 8 core 16 RAM, 512 SSD'
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',20000,5,3) 
+insert into Urun (Baslik,Aciklama ,ResimYol,Fiyat,Stok ) values ('Tab 8', 'samsung tablet.................. '
+,'https://dummyimage.com/450x300/dee2e6/6c757d.jpg',20000,5,2) 
+
+

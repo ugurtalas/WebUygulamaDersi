@@ -1,0 +1,10 @@
+﻿@model List<VeriKatmani.Entities.Kategori>
+
+<ol>
+    @{
+        foreach (var item in Model)
+        {
+            <li> @item.Ad</li>
+        }
+    }
+</ol>

@@ -242,5 +242,11 @@ namespace Web.Controllers
         #endregion
 
 
+        public IActionResult KotegoriListele(OrnekModel Veri)
+        {
+            return View("Kategori" ,   Islem.Ornek.KategoriGetirTumu());
+        }
+
+
     }
 }

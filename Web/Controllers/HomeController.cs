@@ -10,6 +10,9 @@ namespace Web.Controllers
 
         public IActionResult Index()
         {
+
+            Islem.Ornek.KategoriGetirTumu();
+
             return View();
         }
 
