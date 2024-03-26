@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj" />
     <ProjectReference Include="..\Islem\Islem.csproj" />
     <ProjectReference Include="..\VeriKatmani\VeriKatmani.csproj" />
   </ItemGroup>

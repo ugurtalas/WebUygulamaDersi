@@ -65,6 +65,105 @@ namespace Islem
         }
 
 
+
+
+        // Linq örnekler
+
+        public static void TolistOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+            var Liste = Model.Kategori.Where(q=> q.No>1 ).Select(s=> new { KategoriAd = s.Ad  }).ToList();
+            var Liste2 = Model.Kategori.Where(q=> q.No>1 ).ToList();
+
+
+        }
+        public static void FirsOrDefaultOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+
+            var Nesne = Model.Kategori.FirstOrDefault();
+
+            var Nesne2 = Model.Kategori.FirstOrDefault(f=> f.No == 2);
+
+
+            var Nesne3 = Model.Kategori.FirstOrDefault(f=> f.No == 2).Ad;
+
+
+        
+
+
+       
+
+        }
+        public static void OrderByOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+            var Liste = Model.Kategori.ToList().OrderBy(o=> o.Ad);
+            var Liste2 = Model.Kategori.ToList().OrderByDescending(o=> o.Ad);
+        }
+        public static void JoinOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+
+
+            // Linq Metot
+            var UrunList = Model.Urun.Select(s=> new { UrunBaslik = s.Baslik , KategoriAd = s.KategoriNoNavigation.Ad  }).ToList();
+
+
+            // Linq Query
+            var UrunList2 = from u in Model.Urun
+                            join k in Model.Kategori on u.KategoriNo equals k.No
+                            where k.No == 2
+                            select new
+                            {
+                                u.Baslik,
+                                k.Ad
+                            };
+
+
+            // Mixed 
+            var UrunList3 = (from u in Model.Urun
+                             join k in Model.Kategori on u.KategoriNo equals k.No
+                             select new
+                             {
+                                 u.Baslik,
+                                 k.Ad
+                             }).ToList();
+
+        }
+        public static void GroupByOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+
+            var UrunList = Model.Urun.Select(s => new { UrunBaslik = s.Baslik, KategoriAd = s.KategoriNoNavigation.Ad }).
+                ToList().GroupBy(g => g.KategoriAd).ToList();
+
+        }
+        public static void CountOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+            var Liste = Model.Kategori.ToList().Count(); 
+        }
+
+        public static void MinMaxOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+            var Listemin = Model.Urun.ToList().Max(m=> m.Fiyat);
+            var Listemax = Model.Urun.ToList().Min(m => m.Fiyat);
+        }
+        public static void TakeOrnek()
+        {
+            EticaretWudContext Model = new EticaretWudContext();
+            var Listemin = Model.Urun.ToList().Take(2);
+        }
+
+        public static void OrnekSorgu()
+        {
+            //
+        }
+
+
+
     }
 }
 

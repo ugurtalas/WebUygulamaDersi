@@ -248,5 +248,56 @@ namespace Web.Controllers
         }
 
 
+
+        // Lİnq  Sorguları 
+        public IActionResult TolistOrnek(OrnekModel Veri)
+        {
+
+            Islem.Ornek.TolistOrnek();
+
+            return View("Index");
+        }
+        public IActionResult FirsOrDefaultOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.FirsOrDefaultOrnek();
+            return View("Index");
+        }
+        public IActionResult OrderByOrnek (OrnekModel Veri)
+        {
+            Islem.Ornek.OrderByOrnek();
+            return View("Index");
+        }
+        public IActionResult JoinOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.JoinOrnek();
+            return View("Index");
+        }
+        public IActionResult GroupByOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.GroupByOrnek();
+            return View("Index");
+        }
+        public IActionResult CountOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.CountOrnek();
+            return View("Index");
+        }
+
+        public IActionResult MinMaxOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.MinMaxOrnek();
+            return View("Index");
+        }
+        public IActionResult TakeOrnek(OrnekModel Veri)
+        {
+            Islem.Ornek.TakeOrnek();
+            return View("Index");
+        }
+
+        public IActionResult OrnekSorgu(OrnekModel Veri)
+        {
+            return View("Index");
+        }
+
     }
 }

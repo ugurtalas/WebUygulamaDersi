@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DTO\DTO.csproj" />
+    <Folder Include="Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\VeriKatmani\VeriKatmani.csproj" />
   </ItemGroup>
 
