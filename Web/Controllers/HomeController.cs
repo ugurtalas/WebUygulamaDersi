@@ -10,10 +10,7 @@ namespace Web.Controllers
 
         public IActionResult Index()
         {
-
-            Islem.Ornek.KategoriGetirTumu();
-
-            return View();
+            return View("Index",Islem.UrunListe.AnaSayfaUrunListele());
         }
 
 

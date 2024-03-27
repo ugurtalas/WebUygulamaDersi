@@ -8,6 +8,9 @@ namespace Islem
         public static void KategoriEkle()
         {
             EticaretWudContext Model = new EticaretWudContext();
+
+     
+
             Kategori Nesne = new Kategori();
             Nesne.Ad = "Tablet";
             Model.Kategori.Add(Nesne);
